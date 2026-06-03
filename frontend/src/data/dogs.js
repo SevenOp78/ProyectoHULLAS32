@@ -7,7 +7,7 @@ export const dogs = [
     name: "KODA",
     age: "Adulto",
     size: "Grande",
-    sex: "MACHO",
+    sex: "Macho",
     weight: "25 – 32 kg",
     breed: "Mestizo · tipo Pastor",
     vaccines: "Vacunas al día",

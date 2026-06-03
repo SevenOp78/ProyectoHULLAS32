@@ -138,15 +138,14 @@
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
-  filter: saturate(0.9) contrast(1.08);
+  background-position: center bottom;
+  filter: blur(0px) saturate(0.9) contrast(1.08);
   transform: scale(1.05);
-}
+  }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(15, 26, 46, 0.6) 0%, rgba(15, 26, 46, 0.55) 40%, rgba(15, 26, 46, 0.9) 100%);
+  background: rgba(15, 26, 46, 0.15);
 }
 .hero-grain {
   position: absolute;

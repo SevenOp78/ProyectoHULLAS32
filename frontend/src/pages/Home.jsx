@@ -93,7 +93,7 @@ export default function Home() {
             </span>
             <div style={{ display: "flex", flexDirection: "column", lineHeight: 1 }}>
               <span>
-                Huellas <span style={{ color: "var(--red)", fontStyle: "italic" }}>COBAO 32</span>
+                Huellas <span style={{ color: "var(--red)", fontStyle: "italic" }}>COBAO Pl 32</span>
               </span>
               <span className="nav-stamp" style={{ marginTop: 4 }}>
                 Grupo 633 · Administración
@@ -129,7 +129,7 @@ export default function Home() {
             <br />
             por los caninos
             <br />
-            del <span className="red">COBAO 32</span>
+            del <span className="red">COBAO Pl 32</span>
           </h1>
           <p className="hero-quote">
             No son perros callejeros. Son vidas que comparten nuestro plantel y dependen de cómo
@@ -256,7 +256,7 @@ export default function Home() {
               No se aceptan más perros dentro del plantel.
             </h3>
             <p className="aware-warning-text">
-              Esta campaña pide a las próximas generaciones del COBAO 32 que no introduzcan nuevos
+              Esta campaña pide a las próximas generaciones del COBAO Pl 32 que no introduzcan nuevos
               caninos al plantel. Cuidemos a los que ya están aquí, ofrezcámosles un trato digno y
               evitemos que el problema crezca. La conciencia empieza con cada uno de nosotros.
             </p>
@@ -275,7 +275,7 @@ export default function Home() {
           </div>
           <p className="section-lead reveal" style={{ marginTop: 0 }}>
             Aqui encontraras informacion documentada de los caninos que forman parte del Plantel. Ellos
-            forman parte de la comunidad COBAO 32 y son responsabilidad de todos.
+            forman parte de la comunidad COBAO Pl32 y son responsabilidad de todos.
           </p>
         </div>
 
@@ -348,8 +348,8 @@ export default function Home() {
             </h2>
           </div>
           <p className="closing-message reveal">
-            Si lees esto, ya eres parte del cambio. Comparte estas reglas, respeta a los caninos del
-            plantel y enseña a las próximas generaciones que el bienestar animal también es
+            Como estudiante del cobao plantel 32 se parte del cambio. Fomenta estas reglas, respeta a los caninos
+            y comparte a las próximas generaciones que el bienestar animal también es
             comunidad.
           </p>
         </div>
@@ -360,7 +360,7 @@ export default function Home() {
         <div className="footer-inner">
           <div>
             <div className="footer-brand">
-              Huellas <span className="red">COBAO 32</span>
+              Huellas <span className="red">COBAO Pl 32</span>
             </div>
             <div className="footer-stamp">
               Grupo 633 · Administración · Gen. 2023–2026
@@ -395,7 +395,7 @@ export default function Home() {
         </div>
 
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} COBAO 32 · Proyecto escolar sin fines de lucro.</span>
+          <span>© {new Date().getFullYear()} COBAO Pl 32 · Proyecto escolar sin fines de lucro.</span>
           <span className="mono">Conciencia · Respeto · Comunidad</span>
         </div>
       </footer>
