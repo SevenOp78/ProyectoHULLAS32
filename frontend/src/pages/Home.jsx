@@ -341,7 +341,7 @@ export default function Home() {
                   className="dog-profile-btn"
                   data-testid={`dog-profile-btn-${d.slug}`}
                 >
-                  Ver perfil completo <ArrowRight size={14} />
+                  Conocer a {d.name} <ArrowRight size={14} />
                 </Link>
               </div>
             </article>

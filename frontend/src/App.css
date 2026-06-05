@@ -938,7 +938,7 @@
   margin-top: 18px;
   padding: 12px 18px;
   width: 100%;
-  background: var(--red, #b8332a);
+  background: var(--ink, #0f1a2e);
   color: white;
   text-decoration: none;
   font-family: inherit;
@@ -952,7 +952,7 @@
   transition: background-color 0.3s ease, transform 0.2s ease, gap 0.25s ease;
 }
 .dog-profile-btn:hover {
-  background: #8f2620;
+  background: #1b2a44;
   gap: 12px;
 }
 .dog-profile-btn:active {
