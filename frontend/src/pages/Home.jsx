@@ -27,40 +27,46 @@ const ABOUT_IMG = "/img/perro1.png";
 
 const awarenessRules = [
   {
-    icon: <Utensils size={26} />,
+    icon: <Utensils size={42} strokeWidth={1.8} />,
     title: "No los alimentes en el receso",
     text:
       "Evita dar comida en pasillos, escaleras o áreas comunes. Hay un espacio asignado para que coman con dignidad y sin generar conflicto entre alumnos.",
+    theme: "food",
   },
   {
-    icon: <DoorClosed size={26} />,
+    icon: <DoorClosed size={42} strokeWidth={1.8} />,
     title: "Mantén los salones libres",
     text:
       "Los caninos no deben entrar a las aulas, laboratorios ni biblioteca. Su lugar son las áreas exteriores, donde están seguros y no interrumpen las clases.",
+    theme: "door",
   },
   {
-    icon: <Ban size={26} />,
+    icon: <Ban size={42} strokeWidth={1.8} />,
     title: "No traigas perros externos",
     text:
       "Solo cuidamos a los caninos que ya habitan el plantel. Introducir nuevos perros pone en riesgo a los actuales y multiplica el problema que buscamos resolver.",
+    theme: "ban",
   },
   {
-    icon: <Volume2 size={26} />,
+    icon: <Volume2 size={42} strokeWidth={1.8} />,
     title: "Respeta su descanso",
     text:
       "No los molestes mientras duermen, no los persigas ni les grites. Acércate con calma y deja que ellos decidan si quieren interactuar contigo.",
+    theme: "rest",
   },
   {
-    icon: <HandHeart size={26} />,
+    icon: <HandHeart size={42} strokeWidth={1.8} />,
     title: "Trato digno, siempre",
     text:
       "No los lastimes, no les arrojes objetos ni los uses como objeto de bromas. Son seres vivos que merecen respeto, igual que cualquier miembro de la comunidad.",
+    theme: "heart",
   },
   {
-    icon: <Megaphone size={26} />,
+    icon: <Megaphone size={42} strokeWidth={1.8} />,
     title: "Reporta el maltrato",
     text:
       "Si presencias agresión o abandono dentro del plantel, avisa al profesor responsable o a un integrante del grupo 633. Tu voz también los protege.",
+    theme: "report",
   },
 ];
 
@@ -238,12 +244,19 @@ export default function Home() {
             {awarenessRules.map((r, i) => (
               <div
                 key={i}
-                className="aware-card reveal"
+                className={`aware-card aware-card--${r.theme} reveal`}
                 style={{ transitionDelay: `${i * 70}ms` }}
                 data-testid={`aware-card-${i}`}
               >
+                <div className="aware-visual">
+                  <div className="aware-visual-bg" />
+                  <div className="aware-visual-pattern" />
+                  <div className="aware-visual-icon">{r.icon}</div>
+                  <PawPrint size={18} className="aware-paw aware-paw-1" />
+                  <PawPrint size={14} className="aware-paw aware-paw-2" />
+                  <PawPrint size={12} className="aware-paw aware-paw-3" />
+                </div>
                 <div className="aware-num">— {String(i + 1).padStart(2, "0")}</div>
-                <div className="aware-icon">{r.icon}</div>
                 <h3 className="aware-title">{r.title}</h3>
                 <p className="aware-text">{r.text}</p>
               </div>

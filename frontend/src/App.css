@@ -523,48 +523,140 @@
 .aware-card {
   background: var(--ivory);
   border-radius: 18px;
-  padding: 32px 28px;
+  padding: 0 0 32px;
   border: 1px solid rgba(15, 26, 46, 0.08);
-  transition: transform 0.4s ease, background 0.4s ease, color 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .aware-card:hover {
-  transform: translateY(-6px);
-  background: var(--ink);
-  color: var(--ivory);
-  border-color: var(--ink);
+  transform: translateY(-8px);
+  box-shadow: 0 32px 50px -25px rgba(15, 26, 46, 0.35);
 }
-.aware-card:hover .aware-num,
-.aware-card:hover .aware-title {
-  color: var(--amber-soft);
+
+/* Visual header per card */
+.aware-visual {
+  position: relative;
+  height: 170px;
+  overflow: hidden;
+  border-radius: 18px 18px 0 0;
+  display: grid;
+  place-items: center;
 }
-.aware-card:hover .aware-text {
-  color: rgba(241, 235, 220, 0.78);
+.aware-visual-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
-.aware-card:hover .aware-icon {
-  background: var(--amber);
-  color: var(--ink);
+.aware-visual-pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.22;
+  pointer-events: none;
 }
+.aware-visual-icon {
+  position: relative;
+  z-index: 3;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 14px 30px -12px rgba(15, 26, 46, 0.4);
+  transition: transform 0.5s ease;
+}
+.aware-card:hover .aware-visual-icon {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+/* Decorative paw prints floating in background */
+.aware-paw {
+  position: absolute;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.45);
+  transform: rotate(-15deg);
+}
+.aware-paw-1 { top: 16px; left: 18px; transform: rotate(-25deg); }
+.aware-paw-2 { top: 32px; right: 22px; transform: rotate(18deg); opacity: 0.7; }
+.aware-paw-3 { bottom: 18px; left: 32px; transform: rotate(8deg); opacity: 0.55; }
+
+/* === THEME 1: FOOD (terra/orange) === */
+.aware-card--food .aware-visual-bg {
+  background: linear-gradient(135deg, #d97757 0%, #ba6b4e 60%, #8f4a30 100%);
+}
+.aware-card--food .aware-visual-icon { color: #ba6b4e; }
+.aware-card--food .aware-visual-pattern {
+  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.2) 0 8px, transparent 8px 24px);
+}
+
+/* === THEME 2: DOOR (sage green) === */
+.aware-card--door .aware-visual-bg {
+  background: linear-gradient(135deg, #7a9486 0%, #5f7a6e 60%, #3f5a4f 100%);
+}
+.aware-card--door .aware-visual-icon { color: #5f7a6e; }
+.aware-card--door .aware-visual-pattern {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.18) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+/* === THEME 3: BAN (red) === */
+.aware-card--ban .aware-visual-bg {
+  background: linear-gradient(135deg, #e74c3c 0%, #d72638 60%, #a8121f 100%);
+}
+.aware-card--ban .aware-visual-icon { color: #d72638; }
+.aware-card--ban .aware-visual-pattern {
+  background-image: repeating-linear-gradient(-45deg, rgba(255,255,255,0.18) 0 14px, transparent 14px 28px);
+}
+
+/* === THEME 4: REST (deep night blue) === */
+.aware-card--rest .aware-visual-bg {
+  background: linear-gradient(160deg, #1e3a5f 0%, #0f1a2e 70%, #050a18 100%);
+}
+.aware-card--rest .aware-visual-icon { color: #1b2a44; }
+.aware-card--rest .aware-visual-pattern {
+  background-image: radial-gradient(rgba(255,255,255,0.6) 1.2px, transparent 1.5px);
+  background-size: 22px 22px;
+  opacity: 0.35;
+}
+.aware-card--rest .aware-paw { color: rgba(232, 196, 122, 0.5); }
+
+/* === THEME 5: HEART (amber/gold) === */
+.aware-card--heart .aware-visual-bg {
+  background: linear-gradient(135deg, #e8c47a 0%, #c8923d 60%, #a87528 100%);
+}
+.aware-card--heart .aware-visual-icon { color: #a87528; }
+.aware-card--heart .aware-visual-pattern {
+  background-image: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.25) 0%, transparent 35%),
+    radial-gradient(circle at 70% 60%, rgba(255,255,255,0.18) 0%, transparent 30%);
+  opacity: 1;
+}
+
+/* === THEME 6: REPORT (deep ink with amber accent) === */
+.aware-card--report .aware-visual-bg {
+  background: linear-gradient(135deg, #2a3850 0%, #0f1a2e 70%, #1a0f08 100%);
+}
+.aware-card--report .aware-visual-icon { color: #0f1a2e; }
+.aware-card--report .aware-visual-pattern {
+  background-image:
+    radial-gradient(circle at 20% 40%, rgba(232,196,122,0.35) 0%, transparent 25%),
+    radial-gradient(circle at 80% 70%, rgba(215,38,56,0.25) 0%, transparent 25%);
+  opacity: 1;
+}
+.aware-card--report .aware-paw { color: rgba(232, 196, 122, 0.55); }
+
 .aware-num {
   font-family: "JetBrains Mono", monospace;
   font-size: 0.78rem;
   font-weight: 700;
   color: var(--amber-deep);
   letter-spacing: 0.16em;
-  margin-bottom: 18px;
-  transition: color 0.4s ease;
-}
-.aware-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
-  background: var(--cream);
-  color: var(--ink);
-  display: grid;
-  place-items: center;
-  margin-bottom: 22px;
-  transition: background 0.4s ease, color 0.4s ease;
+  margin: 26px 28px 14px;
 }
 .aware-title {
   font-family: "Fraunces", serif;
@@ -573,14 +665,13 @@
   color: var(--ink);
   letter-spacing: -0.02em;
   line-height: 1.15;
-  margin-bottom: 12px;
-  transition: color 0.4s ease;
+  margin: 0 28px 12px;
 }
 .aware-text {
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--ink-mute);
-  transition: color 0.4s ease;
+  margin: 0 28px;
 }
 
 .aware-warning {
