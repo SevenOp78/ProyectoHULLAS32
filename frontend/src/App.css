@@ -1062,7 +1062,7 @@
   gap: 12px;
   padding: 16px;
   background: rgba(0, 0, 0, 0.04);
-  border-left: 3px solid var(--red, #b8332a);
+  border-left: 3px solid var(--amber, #c8923d);
   border-radius: 0 4px 4px 0;
 }
 .fact-icon {
@@ -1122,8 +1122,8 @@
 }
 .dog-detail-message {
   padding: 22px;
-  background: rgba(184, 51, 42, 0.08);
-  border-left: 3px solid var(--red, #b8332a);
+  background: rgba(200, 146, 61, 0.10);
+  border-left: 3px solid var(--amber, #c8923d);
   border-radius: 0 4px 4px 0;
 }
 .dog-detail-message p {

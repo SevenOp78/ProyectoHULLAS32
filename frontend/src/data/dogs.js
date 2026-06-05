@@ -13,7 +13,7 @@ export const dogs = [
     breed: "Mestiza criolla",
     vaccines: "Pendiente",
     sterilized: true,
-    healthNote: "Sana · requiere esterilización",
+    healthNote: "Sana · sin enfermedades conocidas",
     image: "/img/miel.png"
   },
   {
@@ -27,7 +27,7 @@ export const dogs = [
     breed: "Mestiza criolla",
     vaccines: "Pendiente",
     sterilized: true,
-    healthNote: "Sana · requiere esterilización",
+    healthNote: "Sana · sin enfermedades conocidas",
     image: "/img/botitas.png"
   },
   {
@@ -41,7 +41,7 @@ export const dogs = [
     breed: "Mestizo criollo",
     vaccines: "Pendiente",
     sterilized: true,
-    healthNote: "Sano · requiere esterilización",
+    healthNote: "Sano · sin enfermedades conocidas",
     image: "/img/boby.png"
   },
   {
@@ -55,7 +55,7 @@ export const dogs = [
     breed: "Mestiza criolla",
     vaccines: "Pendiente",
     sterilized: true,
-    healthNote: "Sana · requiere esterilización",
+    healthNote: "Sana · sin enfermedades conocidas",
     image: "/img/nala.png"
   },
   {
@@ -69,7 +69,7 @@ export const dogs = [
     breed: "Mestiza criolla",
     vaccines: "Pendiente",
     sterilized: true,
-    healthNote: "Sana · requiere esterilización",
+    healthNote: "Sana · sin enfermedades conocidas",
     image: "/img/kira.png"
   },
   {
@@ -111,7 +111,7 @@ export const dogs = [
     breed: "Mestizo criollo",
     vaccines: "Pendiente",
     sterilized: true,
-    healthNote: "Sano · requiere esterilización",
+    healthNote: "Sano · sin enfermedades conocidas",
     image: "/img/toby.png"
   },
   {
@@ -125,7 +125,7 @@ export const dogs = [
     breed: "Mestizo criollo",
     vaccines: "Pendiente",
     sterilized: true,
-    healthNote: "Sano · requiere esterilización",
+    healthNote: "Sano · sin enfermedades conocidas",
     image: "/img/azabache.png"
   },
   {
@@ -139,7 +139,7 @@ export const dogs = [
     breed: "Mestizo criollo",
     vaccines: "Pendiente",
     sterilized: true,
-    healthNote: "Sano · requiere esterilización",
+    healthNote: "Sano · sin enfermedades conocidas",
     image: "/img/oso.png"
   },
 ];
