@@ -180,7 +180,7 @@ export default function Home() {
             <p className="section-lead">
               El proyecto surge a partir del análisis de la creciente presencia de población canina
               dentro y alrededor del{" "}
-              <strong style={{ color: "var(--ink)" }}>
+              <strong style={{ color: "white" }}>
                 Colegio de Bachilleres del Estado de Oaxaca, Plantel 32 – Cuilápam
               </strong>
               . Esta situación evidencia factores como la falta de control animal, el abandono de
@@ -189,7 +189,7 @@ export default function Home() {
             </p>
             <p className="section-lead" style={{ marginTop: 18 }}>
               Ante ello, los estudiantes del{" "}
-              <strong style={{ color: "var(--amber-deep)" }}>
+              <strong style={{ color: "var(--amber-soft)" }}>
                 grupo 633 de la capacitación de Administración, generación 2023–2026
               </strong>
               , desarrollamos este proyecto con el respaldo y la guía constante del Maestro Héctor

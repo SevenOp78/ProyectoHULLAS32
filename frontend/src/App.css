@@ -336,8 +336,8 @@
 
 /* ============ PROYECTO ============ */
 .about {
-  background: #ffffff;
-  color: var(--ink);
+  background: var(--ink);
+  color: white;
   padding: 130px 28px;
   position: relative;
   overflow: hidden;
@@ -349,7 +349,7 @@
   left: -150px;
   width: 700px;
   height: 700px;
-  background: radial-gradient(circle, rgba(200, 146, 61, 0.10), transparent 60%);
+  background: radial-gradient(circle, rgba(200, 146, 61, 0.18), transparent 60%);
   pointer-events: none;
 }
 .about::after {
@@ -359,7 +359,7 @@
   right: -100px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(15, 26, 46, 0.06), transparent 60%);
+  background: radial-gradient(circle, rgba(95, 122, 110, 0.15), transparent 60%);
   pointer-events: none;
 }
 .about-inner {
@@ -378,33 +378,33 @@
   }
 }
 .about .section-num {
-  color: var(--amber-deep);
+  color: var(--amber-soft);
 }
 .about .section-title {
-  color: var(--ink);
+  color: white;
 }
 .about .section-title em {
-  color: var(--amber-deep);
+  color: var(--amber-soft);
 }
 .about .section-lead {
-  color: var(--ink-mute);
+  color: rgba(255, 255, 255, 0.78);
 }
 .about-question {
   font-family: "Fraunces", serif;
   font-weight: 500;
   font-style: italic;
   font-size: clamp(1.6rem, 2.5vw, 2.2rem);
-  color: var(--amber-deep);
+  color: var(--amber-soft);
   margin-bottom: 26px;
   letter-spacing: -0.02em;
 }
 .about-mention {
   margin-top: 36px;
   padding: 22px 24px;
-  border: 1px solid rgba(15, 26, 46, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-left: 3px solid var(--amber);
   border-radius: 4px;
-  background: rgba(200, 146, 61, 0.08);
+  background: rgba(200, 146, 61, 0.06);
   display: grid;
   gap: 4px;
 }
@@ -413,19 +413,19 @@
   font-size: 0.68rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--amber-deep);
+  color: var(--amber-soft);
   font-weight: 600;
 }
 .about-mention-name {
   font-family: "Fraunces", serif;
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--ink);
+  color: white;
   letter-spacing: -0.01em;
 }
 .about-mention-detail {
   font-size: 0.86rem;
-  color: var(--ink-mute);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .about-image {
@@ -471,7 +471,7 @@
 
 /* ============ CONCIENCIA ============ */
 .aware-section {
-  background: var(--ink);
+  background: var(--cream);
   padding: 130px 28px;
   position: relative;
   overflow: hidden;
@@ -481,15 +481,6 @@
   margin: 0 auto;
   position: relative;
   z-index: 2;
-}
-.aware-section .section-num {
-  color: var(--amber-soft);
-}
-.aware-section .section-title {
-  color: white;
-}
-.aware-section .section-title em {
-  color: var(--amber-soft);
 }
 .aware-header {
   display: grid;
@@ -508,7 +499,7 @@
   font-style: italic;
   font-weight: 500;
   font-size: clamp(1.1rem, 1.4vw, 1.3rem);
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--ink-soft);
   line-height: 1.55;
   border-left: 3px solid var(--terra);
   padding-left: 22px;
@@ -643,7 +634,7 @@
 
 /* ============ DOGS ============ */
 .dogs-section {
-  background: #ffffff;
+  background: #f5ead0;
   padding: 130px 28px;
 }
 .dogs-section > * {
