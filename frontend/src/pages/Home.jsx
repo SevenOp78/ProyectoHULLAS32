@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { dogs } from "../data/dogs";
 import {
   PawPrint,
@@ -17,6 +18,7 @@ import {
   Megaphone,
   GraduationCap,
   ChevronDown,
+  ArrowRight,
 } from "lucide-react";
 
 const HERO_BG =
@@ -333,6 +335,14 @@ export default function Home() {
                     </span>
                   </div>
                 </div>
+
+                <Link
+                  to={`/perro/${d.slug}`}
+                  className="dog-profile-btn"
+                  data-testid={`dog-profile-btn-${d.slug}`}
+                >
+                  Ver perfil completo <ArrowRight size={14} />
+                </Link>
               </div>
             </article>
           ))}
